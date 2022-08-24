@@ -110,13 +110,14 @@ const ProductsContextProvider = ({ children }) => {
     }
 
     function checkProductInCart(id) {
-        let cart = JSON.parse(localStorage.getItem('cart'));
-        if (!cart) {
-            cart = [];
-        }
-        let newCart = cart.products.filter(item => item.id === id)
+        // let cart = JSON.parse(localStorage.getItem('cart'));
+        console.log("cart")
+        // if (!cart) {
+        //     cart = [];
+        // }
+        // let newCart = cart.products.filter(item => item.id === id)
 
-        return newCart.length > 0 ? true : false
+        // return newCart.length > 0 ? true : false
     }
 
     function getCart() {
